@@ -1,26 +1,26 @@
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Nodes/Execution.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Models/WfMS.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/entity.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Neo4jInterface.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Nodes/Entity.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/used.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/wasPartOf.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Nodes/Collection.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/TavernaParser.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Edge.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/hadPlan.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Models/ProvONE.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/RDFManager.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Node.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/qualifiedAssociation.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/TemplateParser.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/hasDefaultParam.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/agent.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Models/Prov.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/qualifiedUsage.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/activity.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/wasGeneratedBy.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/wasAssociatedWith.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/wasInformedBy.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/qualifiedGeneration.java
-/Users/yanmendes/Downloads/Taverna2ProvONE/src/main/java/TavernaParser/Relationships/hasSubProgram.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/wasGeneratedBy.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Edge.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/hasSubProgram.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Node.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/RDFManager.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/wasInformedBy.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/used.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/hadPlan.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/wasPartOf.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Models/WfMS.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Models/Prov.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/TavernaParser.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Nodes/Collection.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/qualifiedUsage.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/TemplateParser.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Models/ProvONE.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/activity.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/wasAssociatedWith.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Nodes/Execution.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/qualifiedGeneration.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/entity.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/qualifiedAssociation.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/hasDefaultParam.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Nodes/Entity.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Relationships/agent.java
+/Users/yanmendes/Documents/Faculdades/Ufjf/Mestrado/Disciplinas/Banco de Dados/TavernaParser/src/main/java/TavernaParser/Neo4jInterface.java
