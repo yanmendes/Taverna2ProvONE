@@ -10,7 +10,7 @@ public class TavernaParser {
     private static void usage(String[] args) {
         System.out.println(String.format("Invalid number of arguments: expected 4, got %s", args.length));
         System.out.println("Usage:");
-        System.out.println("java -jar TavernaParser.jar neo4j_uri neo4j_username neo4j_password turtle_file");
+        System.out.println("java -jar TavernaParser.jar neo4jUri neo4jUsername neo4jPassword turtleFile");
         System.exit(1);
     }
 
