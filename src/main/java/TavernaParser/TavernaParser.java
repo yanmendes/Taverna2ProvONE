@@ -13,8 +13,6 @@ public class TavernaParser {
         Neo4jInterface.initializeSession();
         TemplateParser.initializeRdfManager(args[3]);
 
-        //TODO: MERGE IS NOT WORKING, LOAD + SAVE TO ADD ATTRIBUTES
-
         for (Statement statement : TemplateParser.rdfManager.getStatements()) {
             switch (statement.getPredicate().getLocalName()) {
                 //Atomic relationships
