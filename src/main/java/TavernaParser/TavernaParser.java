@@ -7,11 +7,37 @@ import TavernaParser.Relationships.*;
 import org.apache.jena.rdf.model.Statement;
 
 public class TavernaParser {
+    private static void usage(String[] args) {
+        System.out.println(String.format("Invalid number of arguments: expected 4, got %s", args.length));
+        System.out.println("Usage:");
+        System.out.println("java -jar TavernaParser.jar neo4j_uri neo4j_username neo4j_password turtle_file");
+        System.exit(1);
+    }
+
+    private static void setUp(String[] args) {
+        try {
+            Neo4jInterface.logging(false);
+            Neo4jInterface.initializeDb(args[0], args[1], args[2]);
+            Neo4jInterface.initializeSession();
+            TemplateParser.initializeRdfManager(args[3]);
+        } catch (Exception e) {
+            cleanUp();
+            e.printStackTrace();
+            System.exit(2);
+        }
+    }
+
+    private static void cleanUp() {
+        Neo4jInterface.closeSession();
+        Neo4jInterface.closeDbConnection();
+        TemplateParser.closeFile();
+    }
+
     public static void main(String[] args) {
-        Neo4jInterface.logging(false);
-        Neo4jInterface.initializeDb(args[0], args[1], args[2]);
-        Neo4jInterface.initializeSession();
-        TemplateParser.initializeRdfManager(args[3]);
+        if (args.length != 4)
+            usage(args);
+
+        setUp(args);
 
         for (Statement statement : TemplateParser.rdfManager.getStatements()) {
             switch (statement.getPredicate().getLocalName()) {
@@ -121,8 +147,6 @@ public class TavernaParser {
             }
         }
 
-        Neo4jInterface.closeSession();
-        Neo4jInterface.closeDbConnection();
-        TemplateParser.closeFile();
+        cleanUp();
     }
 }
