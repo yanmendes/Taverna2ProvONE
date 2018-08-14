@@ -58,6 +58,14 @@ public class TavernaParser {
                     (new hasDefaultParam(statement)).execute();
                     break;
 
+                case "hasInput":
+                    (new hasInput(statement)).execute();
+                    break;
+
+                case "hasOutput":
+                    (new hasOutput(statement)).execute();
+                    break;
+
                 case "hadPlan":
                     (new hadPlan(statement)).execute();
                     break;

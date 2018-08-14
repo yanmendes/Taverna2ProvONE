@@ -13,6 +13,8 @@ public class ProvONE {
     public static final String DOCUMENT = "ProvONE_Document";
     public static final String HADINPORT = "ProvONE_hadInPort";
     public static final String HADOUTPORT = "ProvONE_hadOutPort";
+    public static final String HASINPORT = "ProvONE_hasInPort";
+    public static final String HASOUTPORT = "ProvONE_hasOutPort";
     public static final String HADENTITY = "ProvONE_hadEntity";
     public static final String HASSUBPROGRAM = "ProvONE_hasSubProgram";
     public static final String HASDEFAULTPARAM = "ProvONE_hasDefaultParam";
