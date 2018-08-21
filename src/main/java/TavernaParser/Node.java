@@ -13,7 +13,7 @@ public class Node extends Neo4jInterface {
 
     public Node(String id) {
         this.attributes = new HashMap<String, String>();
-        this.addAtribute("id", id);
+        this.addAtribute("id", id).addAtribute("workflow", Neo4jInterface.workflowIdentifier);
     }
 
     public Node(String id, String type) {

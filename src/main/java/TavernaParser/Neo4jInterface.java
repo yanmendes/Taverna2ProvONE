@@ -6,6 +6,7 @@ public abstract class Neo4jInterface {
     private static boolean logging;
     private static Driver driver;
     private static Session session;
+    protected static String workflowIdentifier;
 
     protected static void initializeDb(String uri, String username, String password) {
         driver = GraphDatabase.driver(uri, AuthTokens.basic(username, password));
@@ -37,5 +38,9 @@ public abstract class Neo4jInterface {
 
     protected static String sanitize(String string) {
         return string.replaceAll("\"([^\"]+)\":", "$1:").replaceAll("\\\\", "");
+    }
+
+    public static void setWorkflowIdentifier(String workflowIdentifier) {
+        Neo4jInterface.workflowIdentifier = workflowIdentifier;
     }
 }

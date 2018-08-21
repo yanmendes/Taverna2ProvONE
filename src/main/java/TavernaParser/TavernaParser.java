@@ -8,9 +8,9 @@ import org.apache.jena.rdf.model.Statement;
 
 public class TavernaParser {
     private static void usage(String[] args) {
-        System.out.println(String.format("Invalid number of arguments: expected 4, got %s", args.length));
+        System.out.println(String.format("Invalid number of arguments: expected 5, got %s", args.length));
         System.out.println("Usage:");
-        System.out.println("java -jar TavernaParser.jar neo4jUri neo4jUsername neo4jPassword turtleFile");
+        System.out.println("java -jar TavernaParser.jar neo4jUri neo4jUsername neo4jPassword workflowIdentifier turtleFile");
         System.exit(1);
     }
 
@@ -19,7 +19,9 @@ public class TavernaParser {
             Neo4jInterface.logging(false);
             Neo4jInterface.initializeDb(args[0], args[1], args[2]);
             Neo4jInterface.initializeSession();
-            TemplateParser.initializeRdfManager(args[3]);
+            Neo4jInterface.setWorkflowIdentifier(args[3]);
+            TemplateParser.initializeRdfManager(args[4]);
+
         } catch (Exception e) {
             cleanUp();
             e.printStackTrace();
@@ -34,7 +36,7 @@ public class TavernaParser {
     }
 
     public static void main(String[] args) {
-        if (args.length != 4)
+        if (args.length != 5)
             usage(args);
 
         setUp(args);
